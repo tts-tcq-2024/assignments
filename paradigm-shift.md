@@ -9,14 +9,14 @@ reduce complexity and semantic distance.
 
 ## Pick a language for your assignment
 
-[C](https://classroom.github.com/a/uIfIz_cq)
+[C](https://classroom.github.com/a/9CJaG_Yv)
 
-[C++](https://classroom.github.com/a/GXj4xrcY)
+[C++](https://classroom.github.com/a/pkOQNq5C)
 
-[C#](https://classroom.github.com/a/22f6g1dN)
+[C#](https://classroom.github.com/a/ht9uWOxC)
 
-[Java](https://classroom.github.com/a/1xpNGBni)
+[Java](https://classroom.github.com/a/maHUVRcZ)
 
-[Python](https://classroom.github.com/a/36mhkTBk)
+[Python](https://classroom.github.com/a/MoR0XcFb)
 
-[JavaScript](https://classroom.github.com/a/ijxkDuUT)
+[JavaScript](https://classroom.github.com/a/hT3TWmap)
