@@ -1,5 +1,3 @@
-# assignments
-
 # Assignments
 
 ## Suggested weekly flow
