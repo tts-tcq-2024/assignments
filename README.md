@@ -1,24 +1,45 @@
 # Assignments
 
-## Suggested weekly flow
+## Suggested weekly flow - Monday Batch
 
-Thursday - session - clone + read assignment code
-weekend
-
----
-
-Mon --> commit 'at least / latest' by EoD (multiple commits permitted)
-
-Tue + Wed --> Latest commit will be picked for review
+Monday - session - clone + read assignment code
 
 
 ---
 
-Wed --> rework or respond
+Thursday --> commit 'at least / latest' by EoD (multiple commits permitted)
+
+Friday--> Latest commit will be picked for review
+
 
 ---
 
-Thursday - session / recap + next
+Friday  + Weekend --> rework or respond
+
+---
+
+Monday - session / recap + next
+
+## Suggested weekly flow - Tuesday Batch
+
+Tuesday - session - clone + read assignment code
+
+
+---
+
+ Friday  --> commit 'at least / latest' by EoD (multiple commits permitted)
+
+Weekend --> Latest commit will be picked for review
+
+
+---
+
+Monday --> rework or respond
+
+---
+
+Tuesday - session / recap + next
+
 
 ## Try It
 
