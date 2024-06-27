@@ -12,11 +12,15 @@ Notice the coverage artifact created below your build jobs. This contains detail
 
 Pick a starting point for your assessment.
 
-[C](https://classroom.github.com/a/NNrL9KFC)
+[C](https://classroom.github.com/a/A5wv3oDr)
 
-[C++](https://classroom.github.com/a/_eph36ll)
+[C++](https://classroom.github.com/a/leuf1qsn)
 
-[C#](https://classroom.github.com/a/r-2p5RpP)
+[C#](https://classroom.github.com/a/My39z5Gd)
 
-[Java](https://classroom.github.com/a/XSobgcZT)
+[Java](https://classroom.github.com/a/2JiSXPrF)
+
+[Python](https://classroom.github.com/a/Bfa0mJ_V)
+
+[JS](https://classroom.github.com/a/-p7OQki3)
 
