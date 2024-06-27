@@ -147,7 +147,20 @@ int chargeRateIsOk(float chargeRate)
 }
 ```
 
+### Is this code Bug Free?
+---
+```C++
+bool batteryIsOk(float temperature, float soc, float chargeRate) {
 
+   bool retvalue;
+
+   retvalue = checktemp(temperature);
+   retvalue = checksoc(soc);
+   retvalue = checkchargeRate(chargeRate);
+
+   return retvalue;
+}
+```
 
 ### Good Separation
 
