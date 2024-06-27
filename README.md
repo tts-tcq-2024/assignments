@@ -43,6 +43,8 @@ Tuesday - session / recap + next
 
 ## Try It
 
+[Build Safety Net](testCover.md)
+
 [Paradigm shift](paradigm-shift.md)
 
 ## References
