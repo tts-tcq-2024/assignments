@@ -427,3 +427,31 @@ const char* getErrorMessage(BatteryStatus status) {
 }
 ```
 
+### Pure Functions
+```c
+int isOutOfRange(float value, float LB, float UB)
+{
+  return (value < LB || value > UB);
+}
+int isGreaterThan(float value, float threshold)
+{
+  return (value > threshold);
+}
+bool batteryIsOk(float temperature, float soc, float chargeRate) 
+{ 
+  int count = 0;
+  count = count + isOutOfRange(temperature, 0, 45);
+  count = count + isOutOfRange(soc, 20, 80);
+  count = count + isGreaterThan(chargeRate, 0.8);
+  printf("count value: %d\n", count);
+  if (count > 1)
+  {
+    printf("Battery not okay\n");
+    return false;
+  }
+  else
+  {
+    return true;
+  }
+}
+```
