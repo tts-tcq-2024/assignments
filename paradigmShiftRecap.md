@@ -442,6 +442,30 @@ int main() {
   assert(!batteryIsOk(50, 85, 0));
 }
 ```
+```Java
+static boolean batteryIsOk(float temperature, float soc, float chargeRate) {
+        Map<String, Boolean> tempResults = checkMeasure("Temperature", temperature, 0, 45);
+        Map<String, Boolean> socResults = checkMeasure("State of Charge", soc, 20, 80);
+        Map<String, Boolean> chargeResults = checkMeasure("Charge Rate", chargeRate, 0, 0.8f);
+        return tempResults.get("status") && socResults.get("status") && chargeResults.get("status");
+    }
+
+    static Map<String, Boolean> checkMeasure(String measureName, float measureValue, float lowerLimit, float upperLimit){
+        Map<String, Boolean> results = new HashMap<>();
+        boolean status = true;
+        if (measureValue < lowerLimit) {
+            System.out.println(measureName + " is too low!");
+            status = false;
+        } else if (measureValue > upperLimit) {
+            System.out.println(measureName + " is too high!");
+            status = false;
+        }
+        results.put("status", status);
+        return results;
+    }
+
+```
+
 
 ### Pure Functions
 ```c
