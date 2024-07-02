@@ -508,4 +508,28 @@ int batteryIsOk(float temperature, float soc, float chargeRate) {
     }
  ```
 
+### Shiftng Complexity
+```c
+const char* getBatteryStatusMessage(BatteryStatus status) {
+    switch (status) {
+        case OK:
+            return "Battery is OK";
+        case TEMPERATURE_HIGH:
+            return "Temperature too high!";
+        case TEMPERATURE_LOW:
+            return "Temperature too low!";
+        case SOC_HIGH:
+            return "State of Charge too high!";
+        case SOC_LOW:
+            return "State of Charge too low!";
+        case CHARGE_RATE_HIGH:
+            return "Charge Rate too high!";
+        default:
+            return "Unknown status";
+    }
+}
+
+void printBatteryStatus(BatteryStatus status) {
+    printf("%s\n", getBatteryStatusMessage(status));
+}
 ```
