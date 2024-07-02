@@ -533,3 +533,9 @@ void printBatteryStatus(BatteryStatus status) {
     printf("%s\n", getBatteryStatusMessage(status));
 }
 ```
+### Separation of SideEffect
+```python
+def console_reporter(parameter, value, message):
+    
+    print(f'{parameter.capitalize()} ({value}): {message}')
+```
