@@ -72,3 +72,22 @@ char getSoundexCode(char c) {
     return BFPV(c);
     
 ```
+### Good Separation
+```cs
+ public static string GenerateSoundex(string name)
+    {
+        if (string.IsNullOrEmpty(name))
+        {
+            return string.Empty;
+        }
+
+        StringBuilder soundex = new StringBuilder();
+        SoundexAppend(soundex, name[0]);
+        GetSoundexProcess(soundex, name);
+
+        checkingsoundex(soundex);
+
+        return soundex.ToString();
+    }
+
+```
