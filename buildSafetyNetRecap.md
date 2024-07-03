@@ -19,3 +19,56 @@ private static readonly string[] SoundexMapping = {
   }
 
 ```
+
+```c
+char BFPV(char c){
+    if(c=='B' || c=='F' || c=='P' || c=='V'){
+        return '1';
+    }
+    return CGKKQSXZ(c);
+}
+
+char CGKKQSXZ(char c){
+    if(c=='C' || c=='G' || c=='J' || c=='K' || c=='Q' || c=='S' || c=='X' || c=='Z'){
+        return '2';
+    }
+    return  DT(c);
+}
+
+char DT(char c){
+    if(c=='D' || c=='T'){
+        return '3';
+    }
+    return L(c);
+}
+
+
+char L(char c){
+    if(c=='L'){
+        return'4';
+    }
+   return MN(c);
+}
+
+
+char MN(char c){
+    if(c=='N' || c=='M'){
+        return '5';
+    }
+    return R(c);
+}
+
+
+char R(char c){
+    if(c=='R'){
+        return '6';
+    }
+    return '0';
+}
+
+
+char getSoundexCode(char c) {
+    c = toupper(c);
+    return BFPV(c);
+    
+```
