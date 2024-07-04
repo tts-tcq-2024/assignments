@@ -169,3 +169,26 @@ public static char GetSoundexCode(char character)
 }
 }
 ```
+
+### New Complexity
+```c++
+char getSoundexCode(char c) {
+    c = toupper(c);
+    std::map<char,char> charMap = { {'B','1'}, {'F','1'}, {'P','1'}, {'V','1'},
+                           {'C','2'}, {'G','2'}, {'J','2'}, {'K','2'}, {'Q','2'}, {'S','2'}, {'X','2'}, {'Z','2'},
+                           {'D','3'}, {'T','3'},
+                           {'L','4'},
+                           {'M','5'}, {'N','5'},
+                           {'R','6'},
+                           {'A','0'}, {'E','0'}, {'I','0'}, {'O','0'}, {'U','0'}, {'H','0'}, {'W','0'}, {'Y','0'}
+                           };
+    // return Map consonants to digits
+    for (auto charValue : charMap) // Look at each key-value pair
+    {
+        if (charValue.first == c)
+        {
+            return charValue.second;
+        }
+    }
+}
+```
