@@ -150,3 +150,22 @@ char getSoundexCode(char c) {
         Assert.Equal("J500", Soundex.GenerateSoundex("Jane123"));
     }   
 ```
+### New Grammer but retains complexity
+
+```csharp
+public static char GetSoundexCode(char character)
+{
+    character = char.ToUpper(character);
+    return character switch
+    {
+        'B' or 'F' or 'P' or 'V' => '1',
+        'C' or 'G' or 'J' or 'K' or 'Q' or 'S' or 'X' or 'Z' => '2',
+        'D' or 'T' => '3',
+        'L' => '4',
+        'M' or 'N' => '5',
+        'R' => '6',
+         _ => '0'
+     };
+}
+}
+```
