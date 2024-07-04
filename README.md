@@ -45,7 +45,7 @@ Tuesday - session / recap + next
 
 [TDD In Practice](tdd-in-practice.md)
 
-[Build Safety Net](testCover.md)
+[Build Safety Net](testCover.md)     &nbsp;&nbsp;&nbsp; [recap](buildSafetyNetRecap.md)
 
 [Paradigm shift](paradigm-shift.md)  &nbsp;&nbsp;&nbsp; [recap](paradigmShiftRecap.md)
 
