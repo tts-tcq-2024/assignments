@@ -247,4 +247,31 @@ private:
     bool isShortName(const std::string& name) const;
     bool canAddCode(char prevPrevCode, char currentCode) const ;
 ```
+### UnNecessary Test Cases
+```c
+char arr_with_ret_1[4] = {'B','F','P','V'};
+char arr_with_ret_2[8] = {'C','G','J','K','Q','S','X','Z'};
+char arr_with_ret_3[2] = {'D','T'};
+char arr_with_ret_4[1] = {'L'};
+char arr_with_ret_5[2] = {'M','N'};
+char arr_with_ret_6[1] = {'R'};
 
+
+// Test cases for getSoundexCode function
+TEST(SoundexTest_ret_1, GetSoundexCode)
+{
+    for (int i=0;i<4;i++)
+    {
+        EXPECT_EQ(getSoundexCode(arr_with_ret_1[i]), '1');
+    }
+}
+
+TEST(SoundexTest_ret_2, GetSoundexCode)
+{
+    for (int i=0;i<8;i++)
+    {
+        EXPECT_EQ(getSoundexCode(arr_with_ret_2[i]), '2');
+    }
+}
+
+```
