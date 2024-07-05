@@ -275,3 +275,45 @@ TEST(SoundexTest_ret_2, GetSoundexCode)
 }
 
 ```
+
+```python
+# Additional tests for internal functions
+    def test_get_soundex_code(self):
+        self.assertEqual(get_soundex_code('A'), '0')
+        self.assertEqual(get_soundex_code('B'), '1')
+        self.assertEqual(get_soundex_code('C'), '2')
+        self.assertEqual(get_soundex_code('D'), '3')
+        self.assertEqual(get_soundex_code('L'), '4')
+        self.assertEqual(get_soundex_code('M'), '5')
+        self.assertEqual(get_soundex_code('R'), '6')
+        self.assertEqual(get_soundex_code('Z'), '2')
+        self.assertEqual(get_soundex_code('a'), '0')  # Case insensitivity
+
+    def test_validate_name(self):
+        self.assertFalse(validate_name(""))
+        self.assertTrue(validate_name("John"))
+
+    def test_initialize_soundex(self):
+        self.assertEqual(initialize_soundex("John"), "J")
+        self.assertEqual(initialize_soundex("smith"), "S")
+
+    def test_should_add_code(self):
+        self.assertTrue(should_add_code('1', '0'))
+        self.assertFalse(should_add_code('0', '0'))
+        self.assertFalse(should_add_code('1', '1'))
+
+    def test_handle_character(self):
+
+        prev_code, soundex = handle_character('m', '0', 'S')
+        self.assertEqual(prev_code, '5')
+        self.assertEqual(soundex, 'S5')
+
+    def test_process_characters(self):
+        self.assertEqual(process_characters("Washington"), "W252")
+        self.assertEqual(process_characters("Lee"), "L")
+
+    def test_pad_soundex(self):
+        self.assertEqual(pad_soundex("W252"), "W252")
+        self.assertEqual(pad_soundex("L"), "L000")
+```
+
