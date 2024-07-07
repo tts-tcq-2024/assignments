@@ -275,7 +275,7 @@ private:
     bool isShortName(const std::string& name) const;
     bool canAddCode(char prevPrevCode, char currentCode) const ;
 ```
-### UnNecessary Test Cases
+### UnNecessary Test Cases (Test public interface methods only)
 ```c
 char arr_with_ret_1[4] = {'B','F','P','V'};
 char arr_with_ret_2[8] = {'C','G','J','K','Q','S','X','Z'};
@@ -345,3 +345,237 @@ TEST(SoundexTest_ret_2, GetSoundexCode)
         self.assertEqual(pad_soundex("L"), "L000")
 ```
 
+```python
+def get_soundex_code(c):
+    c = c.upper()
+    mapping = {
+        'B': '1', 'F': '1', 'P': '1', 'V': '1',
+        'C': '2', 'G': '2', 'J': '2', 'K': '2', 'Q': '2', 'S': '2', 'X': '2', 'Z': '2',
+        'D': '3', 'T': '3',
+        'L': '4',
+        'M': '5', 'N': '5',
+        'R': '6'
+    }
+    return mapping.get(c, '0')  # Default to '0' for non-mapped characters
+
+def test_get_soundex_code(self):
+        # Test for '1' mappings
+        self.assertEqual(get_soundex_code('B'), '1')
+        self.assertEqual(get_soundex_code('F'), '1')
+        self.assertEqual(get_soundex_code('P'), '1')
+        self.assertEqual(get_soundex_code('V'), '1')
+        
+        # Test for '2' mappings
+        self.assertEqual(get_soundex_code('C'), '2')
+        self.assertEqual(get_soundex_code('G'), '2')
+        self.assertEqual(get_soundex_code('J'), '2')
+        self.assertEqual(get_soundex_code('K'), '2')
+        self.assertEqual(get_soundex_code('Q'), '2')
+        self.assertEqual(get_soundex_code('S'), '2')
+        self.assertEqual(get_soundex_code('X'), '2')
+        self.assertEqual(get_soundex_code('Z'), '2')
+
+        # Test for '3' mappings
+        self.assertEqual(get_soundex_code('D'), '3')
+        self.assertEqual(get_soundex_code('T'), '3')
+
+        # Test for '4' mapping
+        self.assertEqual(get_soundex_code('L'), '4')
+
+        # Test for '5' mappings
+        self.assertEqual(get_soundex_code('M'), '5')
+        self.assertEqual(get_soundex_code('N'), '5')
+
+        # Test for '6' mapping
+        self.assertEqual(get_soundex_code('R'), '6')
+
+        # Test for characters that should return '0'
+        self.assertEqual(get_soundex_code('H'), '0')
+        self.assertEqual(get_soundex_code('W'), '0')
+        self.assertEqual(get_soundex_code('A'), '0')
+        self.assertEqual(get_soundex_code('E'), '0')
+        self.assertEqual(get_soundex_code('I'), '0')
+        self.assertEqual(get_soundex_code('O'), '0')
+        self.assertEqual(get_soundex_code('U'), '0')
+        self.assertEqual(get_soundex_code('Y'), '0')
+        self.assertEqual(get_soundex_code('1'), '0')
+        self.assertEqual(get_soundex_code('*'), '0')
+
+```
+
+``` Js
+module.exports = {
+  getSoundexCode,
+  generateSoundex
+};
+
+describe('Soundex Algorithm', () => {
+  describe('getSoundexCode', () => {
+    it('should return the correct code for consonants', () => {
+      expect(getSoundexCode('B')).to.equal('1');
+      expect(getSoundexCode('C')).to.equal('2');
+      expect(getSoundexCode('D')).to.equal('3');
+      expect(getSoundexCode('L')).to.equal('4');
+      expect(getSoundexCode('M')).to.equal('5');
+      expect(getSoundexCode('R')).to.equal('6');
+    });
+
+    it('should return 0 for vowels and ignored characters', () => {
+      expect(getSoundexCode('A')).to.equal('0');
+      expect(getSoundexCode('E')).to.equal('0');
+      expect(getSoundexCode('I')).to.equal('0');
+      expect(getSoundexCode('O')).to.equal('0');
+      expect(getSoundexCode('U')).to.equal('0');
+      expect(getSoundexCode('Y')).to.equal('0');
+      expect(getSoundexCode('H')).to.equal('0');
+      expect(getSoundexCode('W')).to.equal('0');
+    });
+
+    it('should be case-insensitive', () => {
+      expect(getSoundexCode('b')).to.equal('1');
+      expect(getSoundexCode('c')).to.equal('2');
+      expect(getSoundexCode('d')).to.equal('3');
+    });
+  });
+
+```
+
+###  Time Complexity Code
+```c
+int LetterList(char letter, int row_value ,int column_value)
+{
+    char SetArray[6][8] = {
+    {'B','F','P','V'},
+    {'C','G','J','K','Q','S','X','Z'},
+    {'D','T'},
+    {'L'},
+    {'M','N'},
+    {'R'}
+    };
+
+     for (int i = 0; i < column_value; i++)
+    {
+        if (letter == SetArray[row_value][i])
+        {
+            return 1;
+            break;
+        }
+    }
+    return 0;
+}
+
+
+char ValueCheck6(char c)
+{
+    int row_value = 5;
+    int column_value = 1;
+    char letter = toupper(c);
+    if (LetterList(letter,row_value,column_value) == 1)
+    {
+        return '6';
+    }
+    else
+    {
+        return '0';
+    }
+}
+
+
+char ValueCheck5(char c)
+{
+    int row_value = 4;
+    int column_value = 2;
+    char letter = toupper(c);
+    if (LetterList(letter,row_value,column_value) == 1)
+    {
+        return '5';
+    }
+    else
+    {
+        return ValueCheck6(c);
+    }
+}
+
+
+char ValueCheck4(char c)
+{
+    int row_value = 3;
+    int column_value = 1;
+    char letter = toupper(c);
+    if (LetterList(letter,row_value,column_value) == 1)
+    {
+        return '4';
+    }
+    else
+    {
+        return ValueCheck5(c);
+    }
+}
+
+
+char ValueCheck3(char c)
+{
+    int row_value = 2;
+    int column_value = 2;
+    char letter = toupper(c);
+    if (LetterList(letter,row_value,column_value) == 1)
+    {
+        return '3';
+    }
+    else
+    {
+        return ValueCheck4(c);
+    }
+}
+char ValueCheck2(char c)
+{
+    int row_value = 1;
+    int column_value = 8;
+    char letter = toupper(c);
+    if (LetterList(letter,row_value,column_value) == 1)
+    {
+        return '2';
+    }
+    else
+    {
+        return ValueCheck3(c);
+    }
+}
+
+
+char ValueCheck1(char c)
+{
+    int row_value = 0;
+    int column_value = 4;
+    char letter = toupper(c);
+    if (LetterList(letter,row_value,column_value) == 1)
+    {
+        return '1';
+    }
+    else
+    {
+        return ValueCheck2(c);
+    }
+}
+
+char getSoundexCode(char c){ 
+    return ValueCheck1(c);
+
+}
+```
+
+### Where to find the Truth : In Code or Comment
+```py
+ def testcases(self):
+        self.assertEqual(generate_soundex("Radhakrishnan"),"R326")  #Random name more than 4 characters
+        self.assertEqual(generate_soundex("X"), "X000")            # Single character non-vowel
+        self.assertEqual(generate_soundex("aeiou"),"A000")         # All vowels
+        self.assertEqual(generate_soundex("Quite"), "Q300")        
+        self.assertEqual(generate_soundex("Quiet"), "Q300")        # Similar sound 
+        self.assertEqual(generate_soundex("A2B"), "A100")         # Non-alphabetic and pad with zeros
+        self.assertEqual(generate_soundex("APPLE"), "A140")     # Repeating characters with vowels ignored
+        self.assertEqual(generate_soundex("HARRYPOTTER"), "H613")     # Example with same consecutive letters, containing 'y' which should be ignored   
+        self.assertEqual(generate_soundex("HANUMAN"), "H555")     # Example with same consecutive code separated by a vowel - coded twice
+        self.assertEqual(generate_soundex("RGYQBAF"), "R211")     # Example with same consecutive code separated by 'h', 'w' or 'y'  - coded as a single number  [ G and Q have the same code 2] [B and F have the same code 1]
+
+```
