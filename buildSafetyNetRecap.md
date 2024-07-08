@@ -21,6 +21,75 @@ private static readonly string[] SoundexMapping = {
 ```
 
 ```c
+int case1() { return 1; }
+int case2() { return 2; }
+int case3() { return 3; }
+int case5() { return 5; }
+int case4() { return 4;}
+int case6() { return 6;}
+int defaultCase() { return 0; }
+
+typedef struct {
+    char value[10];
+    int (*func)();
+} CaseEntry;
+.....
+.....
+int getSoundexCode(char letter) {
+    static CaseEntry cases[] = {
+        {{'B','F','P','V', '\0'}, case1},
+        {{'C','G','J','K','Q','S','X','Z', '\0'}, case2},
+        {{'D','T', '\0'}, case3},
+        {{'M','N', '\0'}, case5},
+        {{'A','E','I','O','U','H','W','Y', '\0'}, defaultCase},
+        {{'L','\0'},case4},
+        {{'R','\0'},case6}
+    };
+
+    for (int i = 0; i < 5; i++) {
+        if(findInCase(cases[i].value, letter)){
+            return cases[i].func();
+        }
+    }
+}
+```
+
+```c
+
+void generateSoundex(const char *name, char *soundex) {
+    int len = strlen(name);
+    soundex[0] = toupper(name[0]);
+    int sIndex = 1;
+    char arr[128];
+    arr['B'] = '1';
+    arr['F'] = '1';
+    arr['P'] = '1';
+    arr['V'] = '1';
+    arr['C'] = '2';
+    arr['G'] = '2'; arr['J'] = '2'; arr['K'] = '2'; arr['Q'] = '2'; arr['S'] = '2'; arr['X'] = '2'; arr['Z'] = '2';
+    arr['D'] = '3'; arr['T'] = '3';
+    arr['L'] = '4';
+    arr['M'] = '5'; arr['N'] = '5';
+    arr['R'] = '6';
+    arr['A'] = '0'; arr['E'] = '0'; arr['I'] = '0'; arr['O'] = '0'; arr['U'] = '0'; arr['H'] = '0'; arr['W'] = '0'; arr['Y'] = '0';
+    
+    for (int i = 1; i < len && sIndex < 4; i++) {
+        char code = arr[toupper(name[i])];
+        if (code != '0' && code != soundex[sIndex - 1]) {
+            soundex[sIndex++] = code;
+        }
+    }
+    
+    while (sIndex < 4) {
+        soundex[sIndex++] = '0';
+    }
+
+    soundex[4] = '\0';
+}
+
+```
+
+```c
 char BFPV(char c){
     if(c=='B' || c=='F' || c=='P' || c=='V'){
         return '1';
@@ -92,39 +161,7 @@ char getSoundexCode(char c) {
 
 ```
 
-```c
-void generateSoundex(const char *name, char *soundex) {
-    int len = strlen(name);
-    soundex[0] = toupper(name[0]);
-    int sIndex = 1;
-    char arr[128];
-    arr['B'] = '1';
-    arr['F'] = '1';
-    arr['P'] = '1';
-    arr['V'] = '1';
-    arr['C'] = '2';
-    arr['G'] = '2'; arr['J'] = '2'; arr['K'] = '2'; arr['Q'] = '2'; arr['S'] = '2'; arr['X'] = '2'; arr['Z'] = '2';
-    arr['D'] = '3'; arr['T'] = '3';
-    arr['L'] = '4';
-    arr['M'] = '5'; arr['N'] = '5';
-    arr['R'] = '6';
-    arr['A'] = '0'; arr['E'] = '0'; arr['I'] = '0'; arr['O'] = '0'; arr['U'] = '0'; arr['H'] = '0'; arr['W'] = '0'; arr['Y'] = '0';
-    
-    for (int i = 1; i < len && sIndex < 4; i++) {
-        char code = arr[toupper(name[i])];
-        if (code != '0' && code != soundex[sIndex - 1]) {
-            soundex[sIndex++] = code;
-        }
-    }
-    
-    while (sIndex < 4) {
-        soundex[sIndex++] = '0';
-    }
 
-    soundex[4] = '\0';
-}
-
-```
 ### Value Based Testing (Repeated)
 
 ```csharp
