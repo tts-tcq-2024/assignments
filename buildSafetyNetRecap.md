@@ -551,7 +551,20 @@ describe('Soundex Algorithm', () => {
   });
 
 ```
+### FAT Interface
+```C++
+StrigCalculator.h
+.....
+.....
+char getSoundexCode(char c);
+bool isHW(char c);
+bool shouldAppend(char code, char prevCode, char currentChar);
+std::string accumulateSoundexCodes(const std::string& name);
+std::string padSoundex(const std::string& soundex);
+std::string generateSoundex(const std::string& name);
 
+#endif // SOUNDEX_H
+```
 ###  Time Complexity Code
 ```c
 int LetterList(char letter, int row_value ,int column_value)
