@@ -241,7 +241,7 @@ public static char GetSoundexCode(char character)
 }
 ```
 
-### New Complexity
+### Time and Space Complexity
 ```c++
 char getSoundexCode(char c) {
     c = toupper(c);
@@ -306,7 +306,36 @@ def get_soundex_code(char):
         'R': '6'
     }.get(char.upper(), '0')
 ```
+``` Java
+public static char getSoundexCode(char c) {
+		Map<Character, Character> characterMap = buildSoundexMap();
+		if(characterMap.containsKey(Character.toUpperCase(c))) {
+			return characterMap.get(Character.toUpperCase(c));
+		}
+		return '0';
+	}
 
+	public static Map<Character, Character> buildSoundexMap() {
+		Map<Character, Character> characterMap = new HashMap<>();
+		characterMap.putAll(populateSoundexMap(Arrays.asList('B', 'F', 'P', 'V'), '1'));
+		characterMap.putAll(populateSoundexMap(Arrays.asList('C', 'G', 'J', 'K', 'Q', 'S', 'X', 'Z'), '2'));
+		characterMap.putAll(populateSoundexMap(Arrays.asList('D', 'T'), '3'));
+		characterMap.putAll(populateSoundexMap(Arrays.asList('L'), '4'));
+		characterMap.putAll(populateSoundexMap(Arrays.asList('M', 'N'), '5'));
+		characterMap.putAll(populateSoundexMap(Arrays.asList('R'), '6'));
+		return characterMap;
+	}
+
+	public static Map<Character, Character> populateSoundexMap(List<Character> nameCharList, char code) {
+		Map<Character, Character> characterMap = new HashMap<>();
+		if(isEmptyList(nameCharList)) {
+			for(Character nameChar: nameCharList) {
+				characterMap.put(nameChar, code);
+			}
+		}
+		return characterMap;
+	}
+```
 ### Good Separation  in Action
 ```C++
 class Soundex {
@@ -551,6 +580,7 @@ describe('Soundex Algorithm', () => {
   });
 
 ```
+> Java : https://github.com/tts-tcq-2024/build-safety-net-in-java-Manikandan9559/blob/main/src/test/java/CodeTestCoverJava/SoundexTest.java
 ### FAT Interface
 ```C++
 StrigCalculator.h
