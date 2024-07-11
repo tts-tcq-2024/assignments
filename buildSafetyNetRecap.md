@@ -580,7 +580,7 @@ describe('Soundex Algorithm', () => {
   });
 
 ```
-> Java : https://github.com/tts-tcq-2024/build-safety-net-in-java-Manikandan9559/blob/main/src/test/java/CodeTestCoverJava/SoundexTest.java
+> Java : https://github.com/tts-tcq-2024/recap/blob/main/buuld-safety-net/fat-interface.md
 ### FAT Interface
 ```C++
 StrigCalculator.h
