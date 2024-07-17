@@ -6,8 +6,8 @@
 - https://github.com/tts-tcq-2024/modular-in-java-Manikandan9559.git
 
 ### Better Decomposition
-https://github.com/tts-tcq-2024/modular-in-cs-BhavanaYaraska
-https://github.com/tts-tcq-2024/modular-in-js-MilindAdiga.git
+- https://github.com/tts-tcq-2024/modular-in-cs-BhavanaYaraska
+- https://github.com/tts-tcq-2024/modular-in-js-MilindAdiga.git
 
 ### What would be the better name?
 ```js
