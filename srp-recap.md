@@ -1,9 +1,9 @@
 ### Conginitive Complexity
-https://github.com/tts-tcq-2024/modular-in-cpp-nitish1703-sys.git
-https://github.com/tts-tcq-2024/modular-in-cpp-ankegowdaja.git
-https://github.com/tts-tcq-2024/modular-in-cs-SanBhat19.git
-https://github.com/tts-tcq-2024/modular-in-py-Ananyaa-holla.git
-https://github.com/tts-tcq-2024/modular-in-java-Manikandan9559.git
+- https://github.com/tts-tcq-2024/modular-in-cpp-nitish1703-sys.git
+- https://github.com/tts-tcq-2024/modular-in-cpp-ankegowdaja.git
+- https://github.com/tts-tcq-2024/modular-in-cs-SanBhat19.git
+- https://github.com/tts-tcq-2024/modular-in-py-Ananyaa-holla.git
+- https://github.com/tts-tcq-2024/modular-in-java-Manikandan9559.git
 
 ### Better Decomposition
 https://github.com/tts-tcq-2024/modular-in-cs-BhavanaYaraska
