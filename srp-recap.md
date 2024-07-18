@@ -8,6 +8,10 @@
 - https://github.com/tts-tcq-2024/modular-in-java-Manikandan9559.git
 - https://github.com/tts-tcq-2024/modular-in-c-EnciJeffrey13.git
 - https://github.com/tts-tcq-2024/modular-in-c-Chetan9850.git
+- https://github.com/tts-tcq-2024/modular-in-c-vekash2021.git
+
+### DRY Violation
+- https://github.com/tts-tcq-2024/modular-in-java-yin2kor.git
 
 ### Better Decomposition
 - https://github.com/tts-tcq-2024/modular-in-cs-BhavanaYaraska
