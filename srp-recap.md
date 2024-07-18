@@ -1,13 +1,19 @@
 ### Conginitive Complexity
 - https://github.com/tts-tcq-2024/modular-in-cpp-nitish1703-sys.git
 - https://github.com/tts-tcq-2024/modular-in-cpp-ankegowdaja.git
+- https://github.com/tts-tcq-2024/modular-in-cpp-nikhilkj1404.git
+- https://github.com/tts-tcq-2024/modular-in-cpp-TatShri.git
 - https://github.com/tts-tcq-2024/modular-in-cs-SanBhat19.git
 - https://github.com/tts-tcq-2024/modular-in-py-Ananyaa-holla.git
 - https://github.com/tts-tcq-2024/modular-in-java-Manikandan9559.git
+- https://github.com/tts-tcq-2024/modular-in-c-EnciJeffrey13.git
+- https://github.com/tts-tcq-2024/modular-in-c-Chetan9850.git
 
 ### Better Decomposition
 - https://github.com/tts-tcq-2024/modular-in-cs-BhavanaYaraska
 - https://github.com/tts-tcq-2024/modular-in-js-MilindAdiga.git
+- https://github.com/tts-tcq-2024/modular-in-py-PrafullaPrabhu.git
+- https://github.com/tts-tcq-2024/modular-in-cpp-Bharathi1603.git
 
 ### What would be the better name?
 ```js
@@ -46,4 +52,28 @@ def display_color():
        print(pair_number,color_pair_to_string(major_color, minor_color))
 
 ```
+#### When Name Reflects Requirement
+```py
+def create_reference_manual():
+    manual = []
+    for major in MAJOR_COLORS:
+        for minor in MINOR_COLORS:
+            pair_number = get_pair_number_from_color(major, minor)
+            manual.append(f'{pair_number:2d} - {color_pair_to_string(major, minor)}')
+    return '\n'.join(manual)
+
+```
+
+```c++
+std::map<std::uint8_t, ColorPair> TeleComm::getColorPairList()
+{
+  std::map<std::uint8_t, ColorPair> colorPairList;
+  for(std::size_t pairNo = 1; pairNo <=  maxColorPair; pairNo++)
+   {
+      colorPairList.insert({pairNo, getColorFromPairNumber(static_cast<int>(pairNo))});
+   }
+   return colorPairList;
+}
+```
+
 
