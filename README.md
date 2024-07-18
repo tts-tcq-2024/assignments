@@ -42,7 +42,9 @@ Tuesday - session / recap + next
 
 
 ## Try It
-[Being Principled](srp.md)
+[Extend And Refactor](paradigm-shift-extend.md)
+
+[Being Principled](srp.md) &nbsp;&nbsp;&nbsp;  [recap](srp-recap.md)
 
 [TDD In Practice](tdd-in-practice.md)
 
