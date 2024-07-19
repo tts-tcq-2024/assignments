@@ -17,7 +17,7 @@
 - https://github.com/tts-tcq-2024/modular-in-py-TaheerAhmed.git
 
 ### DRY Violation
-- https://github.com/tts-tcq-2024/modular-in-java-yin2kor.git
+
 - https://github.com/tts-tcq-2024/modular-in-cs-Pavan9606.git
 
 ### Better Decomposition
@@ -25,6 +25,7 @@
 - https://github.com/tts-tcq-2024/modular-in-js-MilindAdiga.git
 - https://github.com/tts-tcq-2024/modular-in-py-PrafullaPrabhu.git
 - https://github.com/tts-tcq-2024/modular-in-cpp-Bharathi1603.git
+- https://github.com/tts-tcq-2024/modular-in-java-yin2kor.git
 
 ### What would be the better name?
 ```js
