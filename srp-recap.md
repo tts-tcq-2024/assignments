@@ -7,11 +7,18 @@
 - https://github.com/tts-tcq-2024/modular-in-py-Ananyaa-holla.git
 - https://github.com/tts-tcq-2024/modular-in-java-Manikandan9559.git
 - https://github.com/tts-tcq-2024/modular-in-c-EnciJeffrey13.git
+
+### Naming Chaos
+- https://github.com/tts-tcq-2024/modular-in-py-amrutha0404
+- https://github.com/tts-tcq-2024/modular-in-c-Pranav-22.git
+- https://github.com/tts-tcq-2024/modular-in-c-Deepthisv99.git
 - https://github.com/tts-tcq-2024/modular-in-c-Chetan9850.git
 - https://github.com/tts-tcq-2024/modular-in-c-vekash2021.git
+- https://github.com/tts-tcq-2024/modular-in-py-TaheerAhmed.git
 
 ### DRY Violation
 - https://github.com/tts-tcq-2024/modular-in-java-yin2kor.git
+- https://github.com/tts-tcq-2024/modular-in-cs-Pavan9606.git
 
 ### Better Decomposition
 - https://github.com/tts-tcq-2024/modular-in-cs-BhavanaYaraska
