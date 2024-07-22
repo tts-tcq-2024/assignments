@@ -6,7 +6,8 @@
 - https://github.com/tts-tcq-2024/modular-in-cs-SanBhat19.git
 - https://github.com/tts-tcq-2024/modular-in-py-Ananyaa-holla.git
 - https://github.com/tts-tcq-2024/modular-in-java-Manikandan9559.git
-- https://github.com/tts-tcq-2024/modular-in-c-EnciJeffrey13.git
+- https://github.com/tts-tcq-2024/modular-in-c-Logeshwaran99.git
+
 
 ### Naming Chaos
 - https://github.com/tts-tcq-2024/modular-in-py-amrutha0404
