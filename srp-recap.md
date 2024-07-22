@@ -10,7 +10,7 @@
 - https://github.com/tts-tcq-2024/modular-in-java-reshmababu1896.git
 - https://github.com/tts-tcq-2024/modular-in-c-sakthi1989.git
 - https://github.com/tts-tcq-2024/modular-in-c-Uma33298039.git
-- https://github.com/tts-tcq-2024/modular-in-c-uv-uv.git
+- https://github.com/tts-tcq-2024/modular-in-c-uv-uv.git (Fixed)
 
 
 ### Naming Chaos
