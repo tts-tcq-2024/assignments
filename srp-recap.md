@@ -7,6 +7,10 @@
 - https://github.com/tts-tcq-2024/modular-in-py-Ananyaa-holla.git
 - https://github.com/tts-tcq-2024/modular-in-java-Manikandan9559.git
 - https://github.com/tts-tcq-2024/modular-in-c-Logeshwaran99.git
+- https://github.com/tts-tcq-2024/modular-in-java-reshmababu1896.git
+- https://github.com/tts-tcq-2024/modular-in-c-sakthi1989.git
+- https://github.com/tts-tcq-2024/modular-in-c-Uma33298039.git
+- https://github.com/tts-tcq-2024/modular-in-c-uv-uv.git
 
 
 ### Naming Chaos
@@ -16,6 +20,10 @@
 - https://github.com/tts-tcq-2024/modular-in-c-Chetan9850.git
 - https://github.com/tts-tcq-2024/modular-in-c-vekash2021.git
 - https://github.com/tts-tcq-2024/modular-in-py-TaheerAhmed.git
+- https://github.com/tts-tcq-2024/modular-in-c-gokuleshvarkirubhakar.git
+- https://github.com/tts-tcq-2024/modular-in-c-Ramesh-nex.git
+- https://github.com/tts-tcq-2024/modular-in-c-premkumarar007
+- https://github.com/tts-tcq-2024/modular-in-c-NKdevboy.git
 
 ### DRY Violation
 
@@ -27,6 +35,8 @@
 - https://github.com/tts-tcq-2024/modular-in-py-PrafullaPrabhu.git
 - https://github.com/tts-tcq-2024/modular-in-cpp-Bharathi1603.git
 - https://github.com/tts-tcq-2024/modular-in-java-yin2kor.git
+- https://github.com/tts-tcq-2024/modular-in-c-Sreejith-Sasikumar.git
+- https://github.com/tts-tcq-2024/modular-in-c-Pavithra121199.git
 
 ### What would be the better name?
 ```js
@@ -65,6 +75,32 @@ def display_color():
        print(pair_number,color_pair_to_string(major_color, minor_color))
 
 ```
+```c
+void printColorReferenceManual()
+{
+    printf("Color Code Reference Manual:\n");
+    printf("-----------------------------\n");
+    for (int i = 1; i <= numberOfMajorColors * numberOfMinorColors; ++i) 
+    {
+        ColorPair colorPair = GetColorFromPairNumber(i);
+        char colorPairNames[MAX_COLORPAIR_NAME_CHARS];
+        ColorPairToString(&colorPair, colorPairNames);
+        printf("%2d: %s\n", i, colorPairNames);
+    }
+    printf("-----------------------------\n");
+}
+```
+``` Java
+
+ public static void generateColorCodeManual(){
+        MajorColor.Color[] majorColors = MajorColor.Color.values();
+        MinorColor.Color[] minorColors = MinorColor.Color.values();
+
+        String referenceManual = ColorUtil.generateReferenceManual(majorColors, minorColors);
+        System.out.println(referenceManual);
+    }
+```
+
 #### When Name Reflects Requirement
 ```py
 def create_reference_manual():
