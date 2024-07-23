@@ -11,6 +11,8 @@
 - https://github.com/tts-tcq-2024/modular-in-c-sakthi1989.git
 - https://github.com/tts-tcq-2024/modular-in-c-Uma33298039.git
 - https://github.com/tts-tcq-2024/modular-in-c-uv-uv.git (Fixed)
+- https://github.com/tts-tcq-2024/modular-in-py-Satvika182.git
+- https://github.com/tts-tcq-2024/modular-in-c-Reshma7702.git
 
 
 ### Naming Chaos
@@ -37,6 +39,7 @@
 - https://github.com/tts-tcq-2024/modular-in-java-yin2kor.git
 - https://github.com/tts-tcq-2024/modular-in-c-Sreejith-Sasikumar.git
 - https://github.com/tts-tcq-2024/modular-in-c-Pavithra121199.git
+- https://github.com/tts-tcq-2024/modular-in-c-kavyapotnuru258.git
 
 ### What would be the better name?
 ```js
@@ -53,7 +56,7 @@ function printManual() {
     return manual;
 }
 ```
-### Testable ?
+### YAGNI Violation ,Testable ?
 ```c
 void PrintColorCodingReference() {
     int pairNumber = 1;
@@ -100,7 +103,17 @@ void printColorReferenceManual()
         System.out.println(referenceManual);
     }
 ```
+### FAT Interface
+- https://github.com/tts-tcq-2024/modular-in-c-vasi091.git
+- https://github.com/tts-tcq-2024/modular-in-cpp-Akshara-sandha.git
 
+### DEO
+- https://github.com/tts-tcq-2024/modular-in-c-Shankar0920.git
+- https://github.com/tts-tcq-2024/modular-in-c-Shanmukharao9.git
+- https://github.com/tts-tcq-2024/modular-in-c-Saipavan-Poosala.git
+- https://github.com/tts-tcq-2024/modular-in-cpp-sumanthsags.git
+- https://github.com/tts-tcq-2024/modular-in-py-Ganasai549.git
+- 
 #### When Name Reflects Requirement
 ```py
 def create_reference_manual():
