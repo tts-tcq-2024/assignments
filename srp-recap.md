@@ -138,4 +138,13 @@ std::map<std::uint8_t, ColorPair> TeleComm::getColorPairList()
 }
 ```
 
+```py
+def build_color_guide():
+    manual = "Color Coding Reference:\n"
+    for pair_number in range(1, len(MAJOR_COLORS) * len(MINOR_COLORS) + 1):
+        major_color, minor_color = get_color_from_pair_number(pair_number)
+        manual += f"Pair Number {pair_number}: {major_color} {minor_color}\n"
+    return manual
+```
+
 
