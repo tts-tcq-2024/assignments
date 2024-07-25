@@ -16,14 +16,14 @@ While you are strenthening the test:
 
 ## Pick a language for your assignment
 
-[C](https://classroom.github.com/a/My1fPPuG)
+[C](https://classroom.github.com/a/DLTF693m)
 
-[C++](https://classroom.github.com/a/fG5sPFK-)
+[C++](https://classroom.github.com/a/_A4dPM0b)
 
-[C#](https://classroom.github.com/a/RX4EiB_e)
+[C#](https://classroom.github.com/a/qAsWtiu3)
 
-[Java](https://classroom.github.com/a/F2z_4303)
+[Java](https://classroom.github.com/a/EF1Nwzs0)
 
-[Python](https://classroom.github.com/a/Lw14R_7z)
+[Python](https://classroom.github.com/a/kr-u8bM1)
 
-[JavaScript](https://classroom.github.com/a/mXUk019w)
+[JavaScript](https://classroom.github.com/a/576gNW9i)
