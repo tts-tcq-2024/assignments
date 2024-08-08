@@ -23,10 +23,10 @@ Pick a starting point for your assessment.
 
 [C++](https://classroom.github.com/a/iUmT09gz)
 
-[C#](https://classroom.github.com/a/r-2p5RpP)
+[C#](https://classroom.github.com/a/fW8EukWT)
 
-[Java](https://classroom.github.com/a/XSobgcZT)
+[Java](https://classroom.github.com/a/yxoVl-Df)
 
-[Python](https://classroom.github.com/a/60iD4Nh-)
+[Python](https://classroom.github.com/a/CfioPONQ)
 
-[JavaScript](https://classroom.github.com/a/ezu5L4dk)
+[JavaScript](https://classroom.github.com/a/ZzV4T1q3)
