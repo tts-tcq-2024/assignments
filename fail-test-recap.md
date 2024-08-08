@@ -26,3 +26,66 @@ int main() {
 }
 
 ```
+
+### Dead Code
+```c#
+
+        static void Main(string[] args) {
+            int result = printColorMap();
+            Debug.Assert(result == 25);
+          
+            Debug.Assert(CheckColorMapping());
+            Console.WriteLine("All is well (maybe!)");
+        }
+
+        static bool CheckColorMapping() {
+
+            return false; // Simulate that mapping check fails
+        }
+```
+
+### Program For Abstraction
+```c#
+
+static Func<float, int> networkAlert = (celcius) => {
+            Console.WriteLine("ALERT: Temperature is {0} celcius", celcius);
+            return 200; 
+        };
+
+        public static void SetNetworkAlertFunction(Func<float, int> alertFunction) {
+            networkAlert = alertFunction;
+        }
+
+        static void alertInCelcius(float farenheit) {
+            float celcius = (farenheit - 32) * 5 / 9;
+            int returnCode = networkAlert(celcius);
+            if (returnCode != 200) {
+                alertFailureCount += 1;
+            }
+        }
+
+```
+
+### Unleash Dynamic Language Feature
+```Js
+
+
+// Capture the console output
+const output = [];
+const captureStream = new Writable({
+    write(chunk, encoding, callback) {
+        output.push(chunk.toString());
+        callback();
+    }
+});
+const customConsole = new Console({ stdout: captureStream });
+
+const originalConsoleLog = console.log;
+console.log = customConsole.log.bind(customConsole);
+
+const result = print_color_map();
+console.log = originalConsoleLog;
+
+```
+
+
