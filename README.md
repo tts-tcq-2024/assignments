@@ -42,6 +42,9 @@ Tuesday - session / recap + next
 
 
 ## Try It
+
+[Conclusive](conclusive.md)
+
 [Fail On Flase Positive](fail-test.md)
 
 [Extend And Refactor](paradigm-shift-extend.md) &nbsp;&nbsp;&nbsp;  [recap](extend-refactor-recap.md)
