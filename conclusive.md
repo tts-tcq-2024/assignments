@@ -4,7 +4,7 @@ This assessment is graded by the amount of coverage achieved, in addition to rea
 
 The data-flow in the code has several variations:
 
-[![](data-flow.jpg)
+![](data-flow.jpg)
 
 The code uses switch-case / if-else ladders to implement these variations.
 
@@ -14,11 +14,6 @@ They also require repetitive tests.
 
 Try applying the strategy pattern to make the code more 'open', reducing the amount of tests and repetitions, while increasing the coverage.
 
-## Coverage artifact
-
-Notice the coverage artifact created below your build jobs. This contains details of the coverage on your source code.
-
-![](images/coverage-artifact.png)
 
 ## Starting point
 
