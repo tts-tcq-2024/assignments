@@ -21,7 +21,7 @@ Pick a starting point for your assessment.
 
 [C](https://classroom.github.com/a/DdYa0Q-I)
 
-[C++](https://classroom.github.com/a/iUmT09gz)
+[C++](https://classroom.github.com/a/sk01qNMX)
 
 [C#](https://classroom.github.com/a/fW8EukWT)
 
