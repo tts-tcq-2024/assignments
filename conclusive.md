@@ -19,9 +19,9 @@ Try applying the strategy pattern to make the code more 'open', reducing the amo
 
 Pick a starting point for your assessment.
 
-[C](https://classroom.github.com/a/NNrL9KFC)
+[C](https://classroom.github.com/a/iUmT09gz)
 
-[C++](https://classroom.github.com/a/_eph36ll)
+[C++](https://classroom.github.com/a/iUmT09gz)
 
 [C#](https://classroom.github.com/a/r-2p5RpP)
 
